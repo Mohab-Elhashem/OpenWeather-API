@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- main css style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="position-relative p-3 d-flex justify-content-center align-items-center overflow-x-hidden">
+  <button class="theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <div class="container d-flex flex-column align-items-center p-3 gap-3 overflow-x-hidden">
+    <div class="search d-flex align-items-center pt-2 ps-3 pb-2 pe-3">
+      <input type="text" id="search-input" placeholder="Search City" class="border-0">
+      <div class="search-buttom">
+        <i class="fa-solid fa-magnifying-glass "></i>
+      </div>
+    </div>
+    <div class="search_message message flex-column align-items-center text-center mt-3">
+      <img rel="preload" src="assets/message/search-city.png" class="mb-2">
+      <p class="fs-1 fw-bold">Search City</p>
+      <span class="fs-6 fw-normal text-capitalize">Find out weather conditions of city</span>
+    </div>
+    <div class="weather flex-column gap-5" style="display: none;">
+      <div class="condition d-flex flex-column gap-3">
+        <div class="location_date d-flex justify-content-between align-items-center">
+          <div class="location d-flex align-items-center gap-1">
+          <i class="fa-solid fa-location-dot fs-6"></i>
+          <span class="city fs-4 fw-bold">city</span> 
+          </div>
+          <div class="date d-flex align-items-center fs-6">
+            <h4 class="day fw-bold">day</h4>
+            <span class="month">, date</span>
+          </div>
+        </div>
+        <div class="status d-flex justify-content-between align-items-center">
+          <img rel="preload" src="">
+          <div class="temperature fw-bold">
+            <h1 class="temperature_degree">°C</h1>
+            <div class="weather_name">status</div>
+          </div>
+        </div>
+        <div class="more_info d-flex justify-content-between align-items-center pt-0 ps-3">
+          <div class="humidity d-flex align-items-center gap-1">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="info ">
+              <div class="title">Humidity</div>
+              <div class="value">%</div>
+            </div>
+          </div>
+          <div class="wind_speed d-flex align-items-center gap-1">
+            <i class="fa-solid fa-wind"></i>
+            <div class="info">
+              <div class="title fs-5">Wind Speed</div>
+              <div class="value fs-6 fw-bold">M/s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="forecast d-flex align-items-center gap-3 overflow-x-auto">
+        <li class="d-flex flex-column justify-content-between align-items-center gap-3 text-center position-relative">
+          <div class="date fs-6"></div>
+          <img rel="preload" src="">
+          <div class="temperature fs-6 fw-bold">°C</div>
+        </li>
+        <li class="d-flex flex-column justify-content-between align-items-center gap-3 text-center position-relative">
+          <div class="date fs-6"></div>
+          <img rel="preload" src="">
+          <div class="temperature fs-6 fw-bold">°C</div>
+        </li>
+        <li class="d-flex flex-column justify-content-between align-items-center gap-3 text-center position-relative">
+          <div class="date fs-6"></div>
+          <img rel="preload" src="">
+          <div class="temperature fs-6 fw-bold">°C</div>
+        </li>
+        <li class="d-flex flex-column justify-content-between align-items-center gap-3 text-center position-relative">
+          <div class="date fs-6"></div>
+          <img rel="preload" src="">
+          <div class="temperature fs-6 fw-bold">°C</div>
+        </li>
+      </ul>
+    </div>
+    <div class="not-found_message message flex-column align-items-center text-center mt-3" style="display: none;">
+      <img rel="preload" src="assets/message/not-found.png">
+      <p class="pt-3">Not Found</p>
+      <span class="fs-6 fw-normal text-capitalize">Find out weather conditions of city</span>
+    </div>
+  </div>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- main js -->
+  <script src="js/main.js"></script>
+</body>
+</html>
