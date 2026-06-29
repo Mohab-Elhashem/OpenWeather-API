@@ -1,14 +1,3 @@
-// want to add spinner loading  
-// alert when internet off
-// loading image lazy
-// save favorite city
-// change language
-
-
-
-
-
-
 // search section variables
 let search = document.querySelector(".search")
 let searchInput = document.querySelector("input")
@@ -170,9 +159,3 @@ toggleBtn.addEventListener("click", () => {
     }
   }, 200);
 });
-
-
-
-
-
-
