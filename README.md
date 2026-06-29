@@ -1,4 +1,4 @@
-<img width="921" height="579" alt="image" src="https://github.com/user-attachments/assets/423c7fb1-a7f8-48fa-b8f5-64e0ea1784d3" /># 🌤️ Weather App
+# Weather App
 
 A modern, sleek, and highly responsive weather application built with Vanilla JavaScript and Bootstrap. The application fetches and displays real-time weather data and multi-day forecasts based on user locations or search queries.
 
