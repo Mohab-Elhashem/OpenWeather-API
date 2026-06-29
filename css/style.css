@@ -1,18 +1,16 @@
+/* start global  */
 :root{
   --card-bg: rgba(255,255,255,0.1);
   --text-color: #eee;
   --border-color: rgba(255,255,255,0.2);
 }
+*{
+  color: var(--text-color);
+}
 .light-mode{
-  --bg-color: #f1f5f9;
   --card-bg: rgba(0,0,0,0.05);
   --text-color: #292828;
   --border-color: rgba(0,0,0,0.2);
-}
-*{
-  box-sizing: border-box;
-  margin: 0;
-  color: var(--text-color);
 }
 ul{
   list-style: none;
@@ -26,19 +24,21 @@ input:focus{
 }
 body{
   min-height: 100vh;
-  background: url(assets/dark-bg.png);
+  background: url(../images/dark-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 body.light-mode{
-  background: url(assets/light-bg.webp);
+  background: url(../images/light-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+/* end global  */
+
 .container{
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   height: 470px;
@@ -121,6 +121,7 @@ body.light-mode{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+/* start light and dark mode  */
 .theme-toggle {
   width: 30px;
   height: 30px;
@@ -141,3 +142,4 @@ body.light-mode{
 .theme-toggle:hover {
   transform: scale(1.1);
 }
+/* end light and dark mode  */
